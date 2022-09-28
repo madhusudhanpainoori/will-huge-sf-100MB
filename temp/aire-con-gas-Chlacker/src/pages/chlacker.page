@@ -1,3 +1,0 @@
-<apex:page controller="ChlackerController" action="{!redirectToSlacker}">
-    Boop beep
-</apex:page>

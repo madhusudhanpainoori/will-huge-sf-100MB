@@ -1,6 +1,0 @@
-<apex:component layout="none">
-  <!-- Begin National_Head_Tags -->
-  <apex:stylesheet value="{!$Resource.NationalStyles}" />
-
-  <!-- End National Head Tags -->
-</apex:component>

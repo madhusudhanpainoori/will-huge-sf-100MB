@@ -1,6 +1,0 @@
-<apex:page standardcontroller="account" tabStyle="Opportunity" extensions="AccountOpportunityRelatedListExtension">
-<apex:form >
-<c:GivingProposals /> 
-<c:GivingOther /> 
-</apex:form>
-</apex:page>

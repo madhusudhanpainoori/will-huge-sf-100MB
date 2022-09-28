@@ -1,3 +1,0 @@
-<apex:page controller="AddUPRedirect" action="{!redirect}">
-Please wait...
-</apex:page>

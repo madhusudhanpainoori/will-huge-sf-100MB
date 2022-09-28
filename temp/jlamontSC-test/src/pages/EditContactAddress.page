@@ -1,2 +1,0 @@
-<apex:page standardController="rC_Bios__Contact_Address__c" extensions="EditContactAddressCtrl" action="{!redirectToManageAddress}">
-</apex:page>

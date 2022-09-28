@@ -1,5 +1,0 @@
-<apex:page controller="MoveFilterToggle">
-  <apex:form >
-     <apex:commandButton action="{!ToggleFilter}" value="Filter is {!MoveFilterState}... Click to toggle" id="theButton" />
-  </apex:form>
-</apex:page>

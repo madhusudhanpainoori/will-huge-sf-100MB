@@ -1,3 +1,0 @@
-<apex:page standardController="Case" extensions="DispatcherCaseNewController"  
-    action="{!nullValue(redir.url, urlFor($Action.Case.TestingNewCustom, null, null, true))}">
-</apex:page>
