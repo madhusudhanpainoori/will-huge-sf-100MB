@@ -1,3 +1,0 @@
-<apex:page standardStylesheets="false" sidebar="false" showHeader="false" applyBodyTag="false" cache="false" applyHtmlTag="false"  controller="getContentURL">
-    <apex:outputlink value="{!ContentURL}">File</apex:outputlink>
-</apex:page>

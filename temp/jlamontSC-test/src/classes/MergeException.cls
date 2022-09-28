@@ -1,1 +1,0 @@
-global class MergeException extends Exception {}

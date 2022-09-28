@@ -1,3 +1,0 @@
-<apex:page showHeader="false" title="{!$Label.site.authorization_required}" id="Unauthorized">
-<apex:outputText styleClass="title" value="{!$Label.site.authorization_required}"/>
-</apex:page>

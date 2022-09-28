@@ -1,8 +1,0 @@
-<apex:component controller="AccountListController" rendered="true">
-     <apex:attribute name="count"
-                     description="Displays the total records present on the page."
-                     type="Integer"
-                     required="true" />
-                     
-                     This is a component
-</apex:component>

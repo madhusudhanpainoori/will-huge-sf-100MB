@@ -1,5 +1,0 @@
-<apex:page standardController="Snapshot__c" extensions="generateSnapShot">
-    <apex:form >
-        <apex:commandButton value="Run" action="{!createSnapShot}"/>
-    </apex:form>
-</apex:page>
