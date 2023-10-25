@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <apiVersion>58.0</apiVersion>
+    <choices>
+        <description>choice description</description>
+        <name>ch_choice1</name>
+        <choiceText>{!constant1}</choiceText>
+        <dataType>Boolean</dataType>
+        <value>
+            <booleanValue>true</booleanValue>
+        </value>
+    </choices>
+    <constants>
+        <description>constant description</description>
+        <name>constant1</name>
+        <dataType>String</dataType>
+        <value>
+            <stringValue></stringValue>
+        </value>
+    </constants>
+    <description>resources description</description>
+    <dynamicChoiceSets>
+        <description>description picklist</description>
+        <name>picklist1</name>
+        <dataType>Picklist</dataType>
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
+        <picklistField>CurrencyIsoCode</picklistField>
+        <picklistObject>Account</picklistObject>
+    </dynamicChoiceSets>
+    <dynamicChoiceSets>
+        <description>record description</description>
+        <name>record1</name>
+        <dataType>String</dataType>
+        <displayField>CreatedById</displayField>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>CreatedById</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>choice1</elementReference>
+            </value>
+        </filters>
+        <object>AIApplication</object>
+        <outputAssignments>
+            <assignToReference>$Flow.CurrentRecord</assignToReference>
+            <field>Id</field>
+        </outputAssignments>
+        <sortField>CreatedById</sortField>
+        <sortOrder>Desc</sortOrder>
+        <valueField>CreatedById</valueField>
+    </dynamicChoiceSets>
+    <environments>Default</environments>
+    <formulas>
+        <description>formula description</description>
+        <name>formula1</name>
+        <dataType>String</dataType>
+        <expression>{!$Api.Enterprise_Server_URL_130}BR()&amp;&amp;</expression>
+    </formulas>
+    <interviewLabel>resources {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>resources</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <stages>
+        <description>stage description</description>
+        <name>stage1</name>
+        <isActive>true</isActive>
+        <label>stage1</label>
+        <stageOrder>2</stageOrder>
+    </stages>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+    </start>
+    <status>InvalidDraft</status>
+    <textTemplates>
+        <description>text description</description>
+        <name>text1</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;{!variable1.Id}&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <description>variable description</description>
+        <name>var_coll_</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>AIApplicationConfig</objectType>
+    </variables>
+</Flow>
